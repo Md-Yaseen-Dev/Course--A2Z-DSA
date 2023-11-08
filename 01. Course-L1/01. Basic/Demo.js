@@ -1,11 +1,5 @@
-function demo(num){
-    if(num >= 10){
-
-        console.log("your an adult");
-    }
-    else{
-        console.log("you are not an adult");
-    }
+function demo(num1,num2){
+    console.log("value of num1: " + num1 + "\n" + "value of num2: "+ num2 )
 }
 
-demo(15);
+demo(15,10);
