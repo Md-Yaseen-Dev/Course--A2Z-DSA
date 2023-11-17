@@ -31,3 +31,21 @@ function recursionarr(arr1,start,end){
 recursionarr(arr1,0,arr1.length-1);
 
 console.log(arr1);
+
+
+// plaindrome
+
+let str = "madam"
+function plaindrome(str,start,end){
+
+if(start>end){return true}
+    if(str[start] != str[end]){
+        return false;
+    }
+
+return plaindrome(str,start+1,end-1)
+
+
+}
+
+console.log(plaindrome(str,0,str.length-1))
