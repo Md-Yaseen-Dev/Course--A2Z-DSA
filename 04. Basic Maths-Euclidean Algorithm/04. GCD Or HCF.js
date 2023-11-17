@@ -26,19 +26,20 @@ if(a>b){
     a = a%b;
 }
 else{
-    b = b%a;
-
+    b= b%a;
 }
+}
+
 if(a==0){
     console.log(b)
 }
 else{
     console.log(a)
+}
 
-}
-}
 }
 
 gcd_2(15,30);
 gcd_2(5,30);
-gcd_2(150,30);
+gcd_2(18,11);
+gcd_2(12,18);
