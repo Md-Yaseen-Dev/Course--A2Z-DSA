@@ -16,4 +16,7 @@
 
 &#8594; [05 - Recursion](./05.%20Recursion/)                            
 
-&#8594; [06 - Hashing](./06.%20Hashing/)                         
+&#8594; [06 - Hashing](./06.%20Hashing/)      
+
+&#8594; [07 - Sorting](./07.%20Sorting/)                         
+
