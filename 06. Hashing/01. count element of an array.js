@@ -17,4 +17,6 @@ function element(arr, number){
     return count ;
 }
 
-console.log(element(arr, 1))
+console.log(element(arr, 1));
+
+
