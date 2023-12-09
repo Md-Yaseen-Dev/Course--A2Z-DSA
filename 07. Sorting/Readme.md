@@ -8,4 +8,6 @@
 >**03 - Insertion sort** 👉 [click-here](./03.%20Insertion%20sort.js)
 
 
->**03 - Insertion sort** 👉 [click-here](./04.%20Merge%20sort.js)
+>**04 - Merge sort** 👉 [click-here](./04.%20Merge%20sort.js)
+
+
