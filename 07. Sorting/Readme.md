@@ -11,3 +11,4 @@
 >**04 - Merge sort** 👉 [click-here](./04.%20Merge%20sort.js)
 
 
+>**05 - Quick sort** 👉 [click-here](./05.%20Quick%20sort.js)
