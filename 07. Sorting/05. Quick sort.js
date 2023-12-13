@@ -20,13 +20,16 @@ const quickSort = (arr) => {
   
     for (let i = 1; i < arr.length; i++) {
       if (arr[i] < pivot) {
-        leftArr.push(arr[i]);
+           leftArr.push(arr[i]);
+          console.log(leftArr);
+ 
       } else {
         rightArr.push(arr[i]);
       }
     }
-  
-    return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
+  // console.log(rightArr);
+// 
+    return [...quickSort(leftArr), pivot];
   };
 
   let myArray = [3, 7, 2, 5, 1, 4, 6, 8];
