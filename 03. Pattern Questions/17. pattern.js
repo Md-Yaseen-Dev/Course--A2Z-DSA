@@ -13,7 +13,8 @@ function pattern17(n){
         // name
 
 let count =0;
-        let breakpoint = (2*i+1)/2;
+        let breakpoint = (2*i+1);
+        console.log(breakpoint);
         for (k=1 ; k <=2*i+1; k++){
 
             str+=String.fromCharCode(65+count);;
