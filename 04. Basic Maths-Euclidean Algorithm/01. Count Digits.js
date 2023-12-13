@@ -11,6 +11,6 @@
 
         // n = Math.trunc(n/10);
     }
-console.log(n)
+console.log(count)
   }
   count_the_digit(805)
