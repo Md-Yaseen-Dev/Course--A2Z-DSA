@@ -26,104 +26,105 @@
 
 // // for i = low to high  =>  arr[i] = temp [i - low]
 
- 
-
-// function merge(arr,low,mid,high){
-
-//     let temp = []
-//     let left = low;
-//     let right = mid+1;
-//     while(left <= mid && right <= high){
-//         if(arr[left] < arr[right]){
-//         temp.push(arr[left]);
-//         left++
-//         }
-//         else{
-
-//             temp.push(arr[right]);
-//             right++;
-//         }
-//     }
-
-//     while(left<=mid){
-
-//         temp.push(arr[left]);
-//         left++;
-//     }
-
-//     while(right <= high){
-
-//         temp.push(arr[right]);
-//         right++;
-//     }
-
-//     for(let i = low; i<=high; i++){
-//        arr[i] = temp[ i -low];
-//     }
-// }
 
 
-// function ms(arr,low,high){
-//     if(low >= high)return ;
-//     let  mid  = (low+high)/2 ;
-//     ms(arr,low,mid)
-//     ms(arr, mid+1, high);
-//     merge(arr,low,mid,high);
-// }
+function merge(arr,low,mid,high){
 
-// function merge_sort(arr){
+    let temp = []
+    let left = low;
+    let right = mid+1;
+    while(left <= mid && right <= high){
+        if(arr[left] < arr[right]){
+        temp.push(arr[left]);
+        left++
+        }
+        else{
 
-//     let n = arr.length
-//     ms(arr, 0 ,n-1);
-    
-//     } 
+            temp.push(arr[right]);
+            right++;
+        }
+    }
 
-// console.log(merge_sort([5,6,7,8,2,3,1]))
+    while(left<=mid){
+
+        temp.push(arr[left]);
+        left++;
+    }
+
+    while(right <= high){
+
+        temp.push(arr[right]);
+        right++;
+    }
+
+    for(let i = low; i<=high; i++){
+       arr[i] = temp[ i - low];
+    }
+}
+
+
+function ms(arr,low,high){
+    if(low >= high)return ;
+    let  mid  = Math.floor((low + high)/2 );
+    ms(arr,low,mid)
+    ms(arr, mid+1, high);
+    merge(arr,low,mid,high);
+}
+
+function merge_sort(arr){
+
+    let n = arr.length
+    ms(arr, 0 ,n-1);
+
+    return arr
+    } 
+
+console.log(merge_sort([5,6,7,8,2,3,1]))
 
 
 
 // --------merge sort---------------
 
 
-function mergeSort(arr) {
-    if (arr.length <= 1) {
-      return arr; // Base case: if the array has 1 or 0 elements, it's already sorted
-    }
+// function mergeSort(arr) {
+//     if (arr.length <= 1) {
+//       return arr; // Base case: if the array has 1 or 0 elements, it's already sorted
+//     }
   
-    const middle = Math.floor(arr.length / 2); // Find the middle of the array
-    const left = arr.slice(0, middle); // Split the array into two halves
-    const right = arr.slice(middle);
+//     const middle = Math.floor(arr.length / 2); // Find the middle of the array
+//     const left = arr.slice(0, middle); // Split the array into two halves
+//     const right = arr.slice(middle);
   
-    // Recursively sort both halves
-    const sortedLeft = mergeSort(left);
-    const sortedRight = mergeSort(right);
+//     // Recursively sort both halves
+//     const sortedLeft = mergeSort(left);
+//     const sortedRight = mergeSort(right);
   
-    // Merge the sorted halves
-    return merge(sortedLeft, sortedRight);
-  }
+//     // Merge the sorted halves
+//     return merge(sortedLeft, sortedRight);
+//   }
   
-  function merge(left, right) {
-    let result = [];
-    let leftIndex = 0;
-    let rightIndex = 0;
+//   function merge(left, right) {
+//     let result = [];
+//     let leftIndex = 0;
+//     let rightIndex = 0;
   
-    // Compare elements from left and right arrays and merge them in sorted order
-    while (leftIndex < left.length && rightIndex < right.length) {
-      if (left[leftIndex] <= right[rightIndex]) {
-        result.push(left[leftIndex]);
-        leftIndex++;
-      } else {
-        result.push(right[rightIndex]);
-        rightIndex++;
-      }
-    }
+//     // Compare elements from left and right arrays and merge them in sorted order
+//     while (leftIndex < left.length && rightIndex < right.length) {
+//       if (left[leftIndex] <= right[rightIndex]) {
+//         result.push(left[leftIndex]);
+//         leftIndex++;
+//       } else {
+//         result.push(right[rightIndex]);
+//         rightIndex++;
+//       }
+//     }
   
-    // Add any remaining elements from left and right arrays
-    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
-  }
+//     // Add any remaining elements from left and right arrays
+//     return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+//   }
   
-  // Example usage:
-  const array = [5, 3, 8, 2, 1, 4, 7, 6];
-  const sortedArray = mergeSort(array);
-  console.log(sortedArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+//   // Example usage:
+//   const array = [5, 3, 8, 2, 1, 4, 7, 6];
+//   const sortedArray = mergeSort(array);
+//   console.log(sortedArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
   
