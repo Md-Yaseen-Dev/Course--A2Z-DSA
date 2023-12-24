@@ -13,11 +13,11 @@ function pattern22(n){
     let bottom = 2*n-2-i
 
     
-    str+= n-Math.min(Math.min(top,bottom), Math.min(right,left)) + " "
+    str+= n-Math.min(Math.min(top,bottom), Math.min(left, right)) + " "
         }
 str+="\n"
     }
 console.log(str)
 }
 
-pattern22(9)
+pattern22(3)
