@@ -43,3 +43,16 @@ gcd_2(15,30);
 gcd_2(5,30);
 gcd_2(18,11);
 gcd_2(12,18);
+
+
+function gcd_3(a,b){
+
+    if(b == 0){
+
+        return a
+    }
+    return gcd_3(b,a%b);
+}
+
+
+console.log(gcd_3(6,100))
