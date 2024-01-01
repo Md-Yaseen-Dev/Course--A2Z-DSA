@@ -45,3 +45,28 @@ else{
 //  space complexity : O(1)
 
 
+// ---------------------------Optimal approach(single traversal ------------------
+
+
+// 1)  As we know that for a sorted array the previous of every element is smaller than or equal to its current element.
+
+//  2) So, through this, we can conclude that if the previous element is smaller than or equal to the current element then. Then we can say that the two elements then. then we can say that two elements are sorted. if the condition is true for the entire array then the array is sorted.
+
+//  we will check every element with its previous element if the previous element is maller than or equl to the current element then we will move to the next index.
+
+//  if the whole array is traversed successfully or the size of the given array is xero or one i.e N = 0 or  N = 1). Then we will return True else return false.
+
+
+function issorted(arr1){
+    for(let i =1 ; i<arr1.length; i++){
+    
+        if(arr1[i] < arr1[i-1]){
+            return false;
+        }
+    }
+    return true;
+}
+
+const arr1 = [99,3,4,5,6,7,9];
+
+console.log(issorted(arr1) ? "true": "false");
