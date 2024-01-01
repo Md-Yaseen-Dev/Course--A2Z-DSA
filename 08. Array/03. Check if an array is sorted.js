@@ -70,3 +70,7 @@ function issorted(arr1){
 const arr1 = [99,3,4,5,6,7,9];
 
 console.log(issorted(arr1) ? "true": "false");
+
+//  time complexity : O(N)
+
+// space complexity : O(1)
