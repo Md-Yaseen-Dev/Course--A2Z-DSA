@@ -93,4 +93,4 @@ solve1(arr1, arr1.length)
 
 // Time complexity:- O(n) as we iterate through the array only once.
 
-// Space complexity:)(1) as no extra space is used.
+// Space complexity: (1) as no extra space is used.
