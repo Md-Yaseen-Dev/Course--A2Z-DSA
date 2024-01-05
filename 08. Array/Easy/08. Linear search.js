@@ -40,3 +40,8 @@ return -1;
 
 let arr = [1,2,3,4,5,6];
 console.log(search(arr, arr.length , 6));
+
+
+// Time Complexity: O(n), where n is the length of the array.
+
+// Space Complexity: O(1)
