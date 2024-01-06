@@ -27,4 +27,6 @@ for(i=0;i<= arr.length-2; i++){
 return arr ; 
 }
 
+
+
 console.log(selection_sort([13,46,30,24,52,9]));
