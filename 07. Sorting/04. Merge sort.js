@@ -60,7 +60,7 @@ function merge(arr,low,mid,high){
     for(let i = low; i<=high; i++){
        arr[i] = temp[ i - low];
     }
-}
+} 
 
 
 function ms(arr,low,high){
