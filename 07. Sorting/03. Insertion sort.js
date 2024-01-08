@@ -1,3 +1,11 @@
+// -------------------Insertion method -------------------
+
+
+// Approach:
+
+//1. Select an element in each iteration from the unsorted array(using a loop).
+// 2. Place it in its corresponding position in the sorted part and shift the remaining elements accordingly (using an inner loop and swapping).
+// 3.The “inner while loop” basically shifts the elements using swapping.
 function insertion_sort(arr) {
 
 
@@ -24,3 +32,6 @@ function insertion_sort(arr) {
 }
 
 console.log(insertion_sort([14, 18, 12, 6, 8, 13]));
+
+//  TIme complexity : O(N^2)
+//  space complexity : O(1)
