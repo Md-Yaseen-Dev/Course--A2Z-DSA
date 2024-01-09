@@ -59,7 +59,7 @@ for (let i = 0; i < k; i++) {
 console.log(arr[i])    
 }
 
-//  Time complexity: - )( n*log(n) + O(n))
+//  Time complexity: - O( n*log(n)) + O(n) // worst case
 
 // space complexity :- O(n)
 
