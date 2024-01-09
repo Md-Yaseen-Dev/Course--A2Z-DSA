@@ -172,3 +172,8 @@ function secondlargest(arr){
 let arr2 = [6,12,18,24,30,36];
 
 console.log(secondlargest(arr2))
+
+
+// Time Complexity: O(N), Single-pass solution;
+
+// Space Complexity: O(1)
