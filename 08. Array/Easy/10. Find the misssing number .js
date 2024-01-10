@@ -106,5 +106,4 @@ function main() {
   const ans = missingNumber(a, N);
   console.log("The missing number is:", ans);
 }
-
 main();
