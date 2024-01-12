@@ -26,7 +26,8 @@ explaination :arr[1]
 
 
 let arr = [2,6,5,8,11];
-let target  = 15;
+let target  = 14;
+
 function sum_2(arr, target){
 let var_2 = []
 for(let i = 0 ; i<arr.length; i++){
@@ -72,32 +73,29 @@ Finally, if no results are found we will return “No” or {-1, -1}.
 
 */
 
-
 function sum_2a(arr, target){
+
 
     let left = 0 ;
     let right = arr.length-1;
 
-    let var_2 = []
-
+let a = []
     while(left < right){
 
         let sum = arr[left]  + arr[ right];
-
+       
         if(sum == target){
-            
-            var_2.push(left);
-            var_2.push(right);
-
+            return "YEs"
         }
         else if(sum < target){
             left++
         
         }
-        else{left--}
+        else{right--}
     }
 
-    return  var_2
+    return "NO"
+
 }
 
 console.log(sum_2a(arr, target));
