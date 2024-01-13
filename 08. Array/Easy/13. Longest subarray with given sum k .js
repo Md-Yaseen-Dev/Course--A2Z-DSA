@@ -1,4 +1,4 @@
-// ------------------------Longest subarray with given sum k -----------------------
+v// ------------------------Longest subarray with given sum k -----------------------
 
 // Problem statement:  Given an array and a sum k, we need to print the  length of the longest subarray that sums to k.
 
@@ -20,7 +20,7 @@
 
 // ---Intution--
 // We will check the sum of every possible subarray and consider the one with the sum k and the maximum length among them. To get every possible subarray sum, we will be using three nested loops. The first loops(say i and j) will iterate over every possible starting index and ending index of a subarray. Basically, in each iteration, the subarray range will be from index i to index j. Using another loop we will get the sum of the elements of the subarray [i…..j]. Among all the subarrays with sum k, we will consider the one with the maximum length.
-
+  
 // Note: We are selecting every possible subarray using two nested loops and for each of them, we add all its elements using another loop.
 
 
@@ -56,7 +56,7 @@ let a = [2, 3, 5, 1, 9];
 let k = 10;
 console.log(getLongestSubarray(a, k));
 
-
+ 
 //  time complexity: o(N^3);
 // space complexity :
 
