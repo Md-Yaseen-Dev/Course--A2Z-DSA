@@ -1,4 +1,4 @@
-// ----------Left Rotate the array by one
+   // ----------Left Rotate the array by one
 
 // Problem statement:- Given an array of N integers, left rotate the array by one place.
 
