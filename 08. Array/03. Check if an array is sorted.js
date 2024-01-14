@@ -1,7 +1,7 @@
 //  Given an array of size n write a program to check if the given array is sorted in ascending/incrasing / Non decrasing order or not. if the array is sorted then return true. else return false.
 
 
-// Note: two consectibe equal values are considered to be sorted.
+// Note: two consective equal values are considered to be sorted.
 
 
 // The idea is pretty simple here. we will start with the element at the 0th index, and will comparee it with all of its future elements that are present in the array.
