@@ -1,4 +1,4 @@
-//   Two sum :- check if a pair with given sum exists in array.
+ //   Two sum :- check if a pair with given sum exists in array.
 
 // Problem statment: Given an array of integers arr[] and an integer target.
 
