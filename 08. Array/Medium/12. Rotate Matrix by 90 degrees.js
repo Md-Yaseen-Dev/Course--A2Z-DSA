@@ -60,6 +60,7 @@ function rotate1(arr){
 for(let i = 0 ; i<arr.length; i++){
 for(let j = i ; j<arr[0].length; j++){
     [arr[i][j] , arr[j][i]] = [arr[j][i] , arr[i][j]]
+
 }
 for(let i = 0 ; i<arr.length; i++){
     for(let j = 0 ; j<Math.floor(arr.length/2); j++){
