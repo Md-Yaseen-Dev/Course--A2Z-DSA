@@ -60,3 +60,5 @@ console.log("The majority elements are: " + ans.join(" "));
 // Reason: For every element of the array the inner loop runs for N times. And there are N elements in the array. So, the total time complexity is O(N2).
 
 // Space Complexity: O(1) as we are using a list that stores a maximum of 2 elements. The space used is so small that it can be considered constant.
+
+
