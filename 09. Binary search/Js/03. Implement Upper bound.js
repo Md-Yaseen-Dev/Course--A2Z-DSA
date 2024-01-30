@@ -43,3 +43,49 @@ console.log(upperBound(arr,x,n));
 //  Time complexity : O(N);
 
 //  space complexity :O(1)
+
+
+// --------------------------------optimal approach---------------------------
+
+// Optimal Approach (Using Binary Search): 
+// As the array is sorted, we will apply the Binary Search algorithm to find the index. The steps are as follows:
+
+// We will declare the 2 pointers and an ‘ans’ variable initialized to n i.e. the size of the array(as If we don’t find any index, we will return n).
+
+// Place the 2 pointers i.e. low and high: Initially, we will place the pointers like this: low will point to the first index and high will point to the last index.
+// Calculate the ‘mid’: Now, we will calculate the value of mid using the following formula:
+// mid = (low+high) // 2 ( ‘//’ refers to integer division)
+// Compare arr[mid] with x: With comparing arr[mid] to x, we can observe 2 different cases:
+// Case 1 – If arr[mid] > x: This condition means that the index mid may be an answer. So, we will update the ‘ans’ variable with mid and search in the left half if there is any smaller index that satisfies the same condition. Here, we are eliminating the right half.
+// Case 2 – If arr[mid] <= x: In this case, mid cannot be our answer and we need to find some bigger element. So, we will eliminate the left half and search in the right half for the answer.
+
+
+function upperbound1(arr,x,n){
+
+    let low = 0 , high = n-1;
+
+    let ans = n;
+
+
+    while(low<=high){
+
+        let mid = Math.floor((low+high)/2);
+
+
+        if(arr[mid]>x){
+
+            ans = mid;
+
+            high = mid-1
+        }
+        else{
+
+            low = mid+1
+        }
+    }
+
+return ans
+}
+let arr1 = [1,2,3,4,5,6,7,7,8,8,8,9,10,11,12,13];
+let x2 = 10;
+console.log(upperbound1(arr1,x2,arr1.length))
